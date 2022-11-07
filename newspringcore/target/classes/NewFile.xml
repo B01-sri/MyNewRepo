@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+	<bean class="com.te.newspringcore.bean.NewEmployee" id="newemployee" >
+		 <property name="empId" value="100"></property>
+		<property name="eName" value="Rahul"></property> 
+		<property name="newaddress1" ref="newaddress"></property> 
+		
+<!-- 		<constructor-arg  index="0" value="10"></constructor-arg> -->
+<!-- 		<constructor-arg index="1" value="Sonu"></constructor-arg> -->
+			
+		
+		
+		
+		
+	</bean>
+	<bean class="com.te.newspringcore.bean.NewAddress" id="newaddress" >
+		<property name="hNo" value="4/951-c" />
+		<property name="street" value="Vennampatty Road" />
+		<property name="country" value="Tamilnadu"></property>
+	</bean> 
+	<bean class="com.te.newspringcore.bean.NewAddress" id="newaddress1" autowire-candidate="false" >
+		<property name="hNo" value="120/A" />
+		<property name="street" value="Old Street" />
+		<property name="country" value="Noida"></property>
+	</bean>
+
+
+</beans>

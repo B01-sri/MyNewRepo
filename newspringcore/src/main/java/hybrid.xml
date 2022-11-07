@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+ <context:component-scan base-package="com.te.newspringcore"></context:component-scan>
+ 
+ <bean class="com.te.newspringcore.bean.Car" id="car">
+ <property name="carBrand" value="BMW"></property>
+  <property name="carColor" value="Blue"></property>
+  </bean>
+  
+ <bean class="com.te.newspringcore.bean.Car" id="car1">
+ <property name="carBrand" value="Jaguar"></property>
+  <property name="carColor" value="White"></property>
+ 
+ 
+ 
+ </bean>
+	
+	<bean class="com.te.newspringcore.bean.Engine" id="engine">
+	<property name="engineCap" value="5500cc"></property>
+	<property name="engineType" value="Petrol"></property>
+	
+	</bean>
+	<bean class="com.te.newspringcore.bean.Engine" id="engine1">
+	<property name="engineCap" value="4000cc"></property>
+	<property name="engineType" value="Petrol"></property>
+	
+	</bean>
+	
+
+
+</beans>
