@@ -1,0 +1,50 @@
+package com.te.springboot.entity;
+
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlTransient;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
+
+@Data
+@Entity
+
+@Table(name = "employee_Primary_info")
+@Slf4j
+public class EmployeePrimaryInfo {
+	@Id
+	private String empId;
+	private String empName;
+	private int empAge;
+	private String empDesignation;
+	private String empBloodGrp;
+	private String empEmailId;
+	private String empDob;
+	private String empMartialStatus;
+	private String empGender;
+	private int empDeptNo;
+	
+	@OneToOne(cascade = CascadeType.ALL, mappedBy = "primaryinfo")
+    @JsonManagedReference
+//	@JsonIgnore
+	private EmployeeSecondaryInfo secondaryinfo;
+	
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "primaryinfo")
+	@JsonManagedReference
+	private List<EmployeeEducationalInfo> educationalinfo;
+
+	@ManyToMany(cascade = CascadeType.ALL,mappedBy = "primaryinfo")
+	private List<EmployeeSkills> skills;
+}

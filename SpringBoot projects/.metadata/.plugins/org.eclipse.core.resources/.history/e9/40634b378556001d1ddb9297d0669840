@@ -1,0 +1,23 @@
+package com.te.springboot.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import lombok.Data;
+@Entity
+@Data
+public class EmployeeSecondaryInfo {
+	@Id
+	
+	private String empId;
+private String empHeight;
+private String empPanNo;
+private String empDoj;
+private String empIdentificationMark;
+private String empMotherName;
+private String empFatherName;
+private String empPassportNo;
+private String empManager;
+
+	
+}

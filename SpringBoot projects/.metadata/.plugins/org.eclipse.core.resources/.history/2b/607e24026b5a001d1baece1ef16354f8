@@ -1,0 +1,82 @@
+package com.te.springboot.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.te.springboot.dao.EmployeeDao;
+import com.te.springboot.dto.EmployeeDto;
+import com.te.springboot.dto.LoginDto;
+import com.te.springboot.entity.EmployeePrimaryInfo;
+import com.te.springboot.entity.EmployeeSecondaryInfo;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Service
+@Slf4j
+public class EmployeeServiceImpl implements EmployeeService {
+
+	@Autowired
+	private EmployeeDao dao;
+	@Autowired
+	private ModelMapper modelmapper;
+
+	@Override
+	public EmployeePrimaryInfo dtoToEntity(EmployeeDto dto) {
+		EmployeePrimaryInfo primaryinfo = modelmapper.map(dto, EmployeePrimaryInfo.class);
+
+		return dao.save(primaryinfo);
+	}
+
+	@Override
+	public EmployeeDto entityToDto(EmployeePrimaryInfo primaryinfo) {
+		EmployeeDto dto = modelmapper.map(primaryinfo, EmployeeDto.class);
+		return dto;
+	}
+
+	@Override
+	public EmployeePrimaryInfo getById(String empId) {
+
+		return dao.findByEmpId(empId);
+	}
+
+	@Override
+	public EmployeePrimaryInfo updateDetails(EmployeePrimaryInfo primaryinfo) {
+
+		return dao.save(primaryinfo);
+	}
+
+	@Override
+	public List<EmployeePrimaryInfo> getAllEmployees() {
+
+		return dao.getAllEmployees();
+	}
+
+//	@Override
+//	public Boolean getLogin(LoginDto dto) {
+//		EmployeePrimaryInfo primaryInfo = modelmapper.map(dto, EmployeePrimaryInfo.class);
+//		String empId = primaryInfo.getEmpId();
+//		Optional<EmployeePrimaryInfo> findById = dao.findById(empId);
+//		
+//		return null;
+//		
+//	}
+//		boolean isLogin = false;
+//	EmployeePrimaryInfo findByEmpId = dao.findByEmpId(dto.getEmpId());
+//	if(findByEmpId != null) {
+//		if (findByEmpId.getEmpName().equalsIgnoreCase(dto.getEmpName())){
+//			isLogin = true;
+//			return isLogin;
+//		}
+//		return isLogin;
+//	}
+//	return isLogin;
+//		
+//	}
+}

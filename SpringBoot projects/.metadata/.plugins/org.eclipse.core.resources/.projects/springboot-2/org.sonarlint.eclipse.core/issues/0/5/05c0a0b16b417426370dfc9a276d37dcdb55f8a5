@@ -1,0 +1,59 @@
+
+a
+java:S1452"&Remove usage of generic wildcard type.(©£‰Ôúÿÿÿÿ8ŠåØòÁ0HÏRCRITICALZ
+CODE_SMELL
+Œ
+java:S2293'"YReplace the type specification in this constructor call with the diamond operator ("<>").(ª‹8Í…†˜Â0HÔRMINORZ
+CODE_SMELL
+Œ
+java:S2293I"YReplace the type specification in this constructor call with the diamond operator ("<>").(™ñî8›ÔšÂ0H¯RMINORZ
+CODE_SMELL
+~
+java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(©£‰Ôúÿÿÿÿ8ŠåØòÁ0HÎRCRITICALZVULNERABILITY
+t
+java:S1128"ARemove this unused import 'org.springframework.http.HttpRequest'.(ÌÖÁÛ8Í…†˜Â0HäRMINORZ
+CODE_SMELL
+Œ
+java:S22932"YReplace the type specification in this constructor call with the diamond operator ("<>").(‰²ÜÍ8Í…†˜Â0HØRMINORZ
+CODE_SMELL
+‘
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ë…ÛÈÿÿÿÿÿ8ŠåØòÁ0HÒRMINORZ
+CODE_SMELL
+\
+java:S1452:"&Remove usage of generic wildcard type.(¶ç”8Í…†˜Â0HáRCRITICALZ
+CODE_SMELL
+Œ
+java:S2293?"YReplace the type specification in this constructor call with the diamond operator ("<>").(€šçõ8Í…†˜Â0HÜRMINORZ
+CODE_SMELL
+a
+java:S1452%"&Remove usage of generic wildcard type.(ğé¬ÿúÿÿÿÿ8Í…†˜Â0HŞRCRITICALZ
+CODE_SMELL
+Œ
+java:S2293F"YReplace the type specification in this constructor call with the diamond operator ("<>").(â†ÃÅ8‘Ğ‡šÂ0HŸRMINORZ
+CODE_SMELL
+b
+java:S1481E"*Remove this unused "login" local variable.(–í¨Èúÿÿÿÿ8›ÔšÂ0H²RMINORZ
+CODE_SMELL
+~
+java:S46840"@Replace this persistent entity with a simple POJO or DTO object.(“é¦Éşÿÿÿÿ8Í…†˜Â0HßRCRITICALZVULNERABILITY
+‘
+java:S2293*"YReplace the type specification in this constructor call with the diamond operator ("<>").(Å¯‚ıÿÿÿÿ8Í…†˜Â0HÖRMINORZ
+CODE_SMELL
+\
+java:S1452C"&Remove usage of generic wildcard type.(¨«ğÔ8‘Ğ‡šÂ0H¡RCRITICALZ
+CODE_SMELL
+‘
+java:S22934"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ò¢õòûÿÿÿÿ8Í…†˜Â0HÚRMINORZ
+CODE_SMELL
+Œ
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(×Ë•Ö8ŠåØòÁ0HĞRMINORZ
+CODE_SMELL
+q
+java:S1854E"9Remove this useless assignment to local variable "login".(–í¨Èúÿÿÿÿ8›ÔšÂ0H±RMAJORZ
+CODE_SMELL
+a
+java:S14520"&Remove usage of generic wildcard type.(“é¦Éşÿÿÿÿ8Í…†˜Â0HàRCRITICALZ
+CODE_SMELL
+b
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8Í…†˜Â0HâRMINORZ
+CODE_SMELL

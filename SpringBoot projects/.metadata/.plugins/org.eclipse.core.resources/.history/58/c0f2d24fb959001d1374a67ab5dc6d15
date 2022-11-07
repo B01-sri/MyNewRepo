@@ -1,0 +1,16 @@
+package com.te.springboot.service;
+
+import java.util.List;
+import java.util.Set;
+
+import com.te.springboot.dto.EmployeeDto;
+import com.te.springboot.entity.EmployeePrimaryInfo;
+
+public interface EmployeeService {
+	public EmployeePrimaryInfo register(EmployeePrimaryInfo primaryinfo);
+public EmployeePrimaryInfo getById(String empId);
+public EmployeePrimaryInfo updateDetails(EmployeePrimaryInfo primaryinfo);
+public List<EmployeePrimaryInfo> getAllEmployees();
+public Boolean Login(String empId,String empName);
+
+}

@@ -1,0 +1,26 @@
+2022-10-30 22:22:20.013  INFO 12760 --- [main] c.te.springboot.Springboot2Application   : Starting Springboot2Application using Java 17.0.4.1 on DESKTOP-PGFQASF with PID 12760 (C:\Users\Sri\Downloads\SpringBoot projects\springboot-2\target\classes started by Sri in C:\Users\Sri\Downloads\SpringBoot projects\springboot-2)
+2022-10-30 22:22:20.018  INFO 12760 --- [main] c.te.springboot.Springboot2Application   : No active profile set, falling back to 1 default profile: "default"
+2022-10-30 22:22:21.177  INFO 12760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-30 22:22:21.278  INFO 12760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 1 JPA repository interfaces.
+2022-10-30 22:22:22.059  INFO 12760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8020 (http)
+2022-10-30 22:22:22.077  INFO 12760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-30 22:22:22.078  INFO 12760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-30 22:22:22.298  INFO 12760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-30 22:22:22.300  INFO 12760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2166 ms
+2022-10-30 22:22:22.624  INFO 12760 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-30 22:22:22.718  INFO 12760 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-10-30 22:22:22.994  INFO 12760 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-30 22:22:23.168  INFO 12760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-30 22:22:23.177  WARN 12760 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-10-30 22:22:23.706  INFO 12760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-30 22:22:23.765  INFO 12760 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-30 22:22:24.997  INFO 12760 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-30 22:22:25.014  INFO 12760 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-30 22:22:25.916  WARN 12760 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-30 22:22:27.267  INFO 12760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8020 (http) with context path ''
+2022-10-30 22:22:27.289  INFO 12760 --- [main] c.te.springboot.Springboot2Application   : Started Springboot2Application in 8.033 seconds (JVM running for 9.342)
+2022-10-30 22:22:59.900  INFO 12760 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-30 22:22:59.924  INFO 12760 --- [RMI TCP Connection(9)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-30 22:22:59.936  INFO 12760 --- [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-30 22:22:59.939  INFO 12760 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-30 22:22:59.954  INFO 12760 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

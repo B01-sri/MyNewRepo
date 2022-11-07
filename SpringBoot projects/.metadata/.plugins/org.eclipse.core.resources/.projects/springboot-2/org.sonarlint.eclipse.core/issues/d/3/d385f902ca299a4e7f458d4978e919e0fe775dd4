@@ -1,0 +1,9 @@
+
+b
+java:S1066W"/Merge this if statement with the enclosing one.(Ê˜“Ì8ÉÏ—…√0Hà)RMAJORZ
+CODE_SMELL
+^
+java:S1168J"+Return an empty collection instead of null.(•πÔç8ó†ÑÉ≈0Hä)RMAJORZ
+CODE_SMELL
+n	java:S125?"<This block of commented-out lines of code should be removed.(Çµï˜8ó†ÑÉ≈0Hç)RMAJORZ
+CODE_SMELL

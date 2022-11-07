@@ -1,0 +1,5 @@
+package com.te.springboot.dto;
+
+public class ResponseDto {
+
+}

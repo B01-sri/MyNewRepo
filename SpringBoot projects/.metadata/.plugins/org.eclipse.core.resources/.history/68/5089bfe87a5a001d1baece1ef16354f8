@@ -1,0 +1,27 @@
+package com.te.springboot.service;
+
+import com.te.springboot.dto.EmployeeDto;
+import com.te.springboot.entity.Employee;
+
+public class EmployeeService implements EmployeeServiceImpl{
+
+	@Override
+	public Employee dtoToEntity(EmployeeDto dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public EmployeeDto entityToDto(Employee employee) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee getById(String empId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

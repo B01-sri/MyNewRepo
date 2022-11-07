@@ -1,0 +1,46 @@
+package com.te.springboot.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.te.springboot.dto.EmployeeDto;
+
+import com.te.springboot.entity.Employee;
+import com.te.springboot.service.EmployeeService;
+
+import lombok.extern.slf4j.Slf4j;
+
+@RestController
+@Slf4j
+public class EmployeeController {
+	@Autowired
+	private EmployeeService service;
+
+	@PostMapping("/register")
+	public ResponseEntity<?> register(@RequestBody EmployeeDto dto) {
+
+		try {
+			Employee employee = service.dtoToEntity(dto);
+			return new ResponseEntity<EmployeeDto>(service.entityToDto(employee), HttpStatus.OK);
+		} catch (Exception e) {
+			return new ResponseEntity<String>("Something Went Wrong !", HttpStatus.BAD_REQUEST);
+		}
+
+	}
+
+	@GetMapping("/login")
+	public ResponseEntity<?> getlogin(@RequestBody EmployeeDto dto) {
+		Boolean login = service.getLogin(dto);
+		if (login != null) {
+			return new ResponseEntity<String>("Login Successful", HttpStatus.OK);
+		}
+
+		return new ResponseEntity<String>("Invalid Credentials", HttpStatus.BAD_REQUEST);
+	}
+
+}

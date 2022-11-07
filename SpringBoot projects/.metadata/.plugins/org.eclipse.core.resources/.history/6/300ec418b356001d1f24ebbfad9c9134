@@ -1,0 +1,5 @@
+package com.te.springboot.service;
+
+public interface EmployeeService {
+
+}

@@ -1,0 +1,44 @@
+
+…
+java:S2293*"YReplace the type specification in this constructor call with the diamond operator ("<>").(þÓ¹‰H½%RMINORZ
+CODE_SMELL
+„
+java:S1192*"UDefine a constant instead of duplicating this literal "something went wrong" 3 times.(þÓ¹‰H¿%RCRITICALZ
+CODE_SMELL
+w
+java:S4684!"@Replace this persistent entity with a simple POJO or DTO object.(Ú©Ô¨þÿÿÿÿHÃ%RCRITICALZVULNERABILITY
+U
+java:S1452^"&Remove usage of generic wildcard type.(Ëúú¦HÄ%RCRITICALZ
+CODE_SMELL
+Z
+java:S1452."&Remove usage of generic wildcard type.(¤ôÆÙøÿÿÿÿHÅ%RCRITICALZ
+CODE_SMELL
+Z
+java:S1452E"&Remove usage of generic wildcard type.(Ñµ‰ÄùÿÿÿÿHÆ%RCRITICALZ
+CODE_SMELL
+Z
+java:S1452e"&Remove usage of generic wildcard type.(‰©ÛžøÿÿÿÿHÇ%RCRITICALZ
+CODE_SMELL
+g	java:S125#"<This block of commented-out lines of code should be removed.(Ôþ™öHÈ%RMAJORZ
+CODE_SMELL
+U
+java:S1452W"&Remove usage of generic wildcard type.(¦˜‰ÄHÌ%RCRITICALZ
+CODE_SMELL
+…
+java:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(úÀ¾ŸHÍ%RMINORZ
+CODE_SMELL
+Z
+java:S1452N"&Remove usage of generic wildcard type.(€žÇÐûÿÿÿÿHÏ%RCRITICALZ
+CODE_SMELL
+Z
+java:S1452:"&Remove usage of generic wildcard type.(ÄÑõšúÿÿÿÿHÐ%RCRITICALZ
+CODE_SMELL
+Z
+java:S1452!"&Remove usage of generic wildcard type.(Ú©Ô¨þÿÿÿÿHÑ%RCRITICALZ
+CODE_SMELL
+Š
+java:S2293?"YReplace the type specification in this constructor call with the diamond operator ("<>").(ËÄ˜õýÿÿÿÿHÒ%RMINORZ
+CODE_SMELL
+„
+java:S2293Q"YReplace the type specification in this constructor call with the diamond operator ("<>").(ß»´hHÔ%RMINORZ
+CODE_SMELL

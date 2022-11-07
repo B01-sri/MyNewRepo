@@ -1,0 +1,17 @@
+
+T	java:S108-")Either remove or fill this block of code.(å¥ž‡HÌ(RMAJORZ
+CODE_SMELL
+g	java:S125"<This block of commented-out lines of code should be removed.(ôàèËHÍ(RMAJORZ
+CODE_SMELL
+g	java:S125""<This block of commented-out lines of code should be removed.(ÝÃ¥ŽHÏ(RMAJORZ
+CODE_SMELL
+\
+java:S1066Œ"/Merge this if statement with the enclosing one.(ø–é»HÑ(RMAJORZ
+CODE_SMELL
+W
+java:S1168Z"+Return an empty collection instead of null.(¥¹ïHÓ(RMAJORZ
+CODE_SMELL
+T	java:S108c")Either remove or fill this block of code.(”ý¾HÖ(RMAJORZ
+CODE_SMELL
+l	java:S125O"<This block of commented-out lines of code should be removed.(Ö¯ÐòùÿÿÿÿH×(RMAJORZ
+CODE_SMELL

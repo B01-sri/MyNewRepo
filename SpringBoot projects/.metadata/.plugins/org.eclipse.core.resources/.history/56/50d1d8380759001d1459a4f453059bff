@@ -1,0 +1,69 @@
+package com.te.springboot.service;
+
+import java.util.List;
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.te.springboot.dao.EmployeeDao;
+import com.te.springboot.dto.EmployeeDto;
+import com.te.springboot.entity.EmployeePrimaryInfo;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Service
+@Slf4j
+public class EmployeeServiceImpl implements EmployeeService {
+	@Autowired
+	private EmployeeDao dao;
+
+	@Override
+	public EmployeePrimaryInfo register(EmployeePrimaryInfo primaryinfo) {
+
+		return dao.save(primaryinfo);
+	}
+
+	@Override
+	public EmployeePrimaryInfo getById(String empId) {
+
+		return dao.findByEmpId(empId);
+	}
+
+	@Override
+	public EmployeePrimaryInfo updateDetails(EmployeePrimaryInfo primaryinfo) {
+		
+		return dao.save(primaryinfo);
+	}
+
+	@Override
+	public List<EmployeePrimaryInfo> getAllEmployees() {
+
+		return dao.getAllEmployees();
+	}
+
+	@Override
+	public Boolean Login(String empId, String empName) {
+		Boolean isLogin = false;
+		EmployeePrimaryInfo findByEmpId = dao.findByEmpId(empId);
+		if (findByEmpId != null) {
+			if (findByEmpId.getEmpName().equalsIgnoreCase(empName)) {
+				isLogin = true;
+			}
+		}
+		return isLogin;
+	}
+
+	@Override
+	public EmployeeDto entityToDto(EmployeePrimaryInfo primaryinfo) {
+	EmployeeDto dto = new EmployeeDto();
+dto.setEmpId(primaryinfo.getEmpId());
+dto.setEmpName(primaryinfo.getEmpName());
+dto.setEmpFatherName(primaryinfo.getSecondaryinfo().getEmpFatherName());
+dto.setEmpMotherName(primaryinfo.getSecondaryinfo().getEmpMotherName());
+
+
+		return null;
+	}
+
+}

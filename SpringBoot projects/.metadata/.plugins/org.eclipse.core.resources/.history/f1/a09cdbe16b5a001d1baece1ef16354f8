@@ -1,0 +1,27 @@
+package com.te.springboot.entity;
+
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "Employee_Technical_Skills")
+public class EmployeeSkills {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private String skillId;
+	private String skillName;
+
+	private List<EmployeePrimaryInfo> primaryInfo;
+}

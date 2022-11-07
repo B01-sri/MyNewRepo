@@ -1,0 +1,113 @@
+package com.te.springboot.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.te.springboot.dao.EmployeeDao;
+import com.te.springboot.dto.EmployeeDto;
+import com.te.springboot.entity.EmployeePrimaryInfo;
+import com.te.springboot.entity.EmployeeSecondaryInfo;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Service
+@Slf4j
+public class EmployeeServiceImpl implements EmployeeService {
+	
+	@Autowired
+	private EmployeeDao dao;
+	@Autowired
+	private ModelMapper modelmapper;
+
+	@Override
+	public EmployeePrimaryInfo dtoToEntity(EmployeeDto dto) {
+		EmployeePrimaryInfo primaryinfo = modelmapper.map(dto, EmployeePrimaryInfo.class);
+//		EmployeeDto employeeDto = modelmapper.map(primaryInfo, EmployeeDto.class);
+		return dao.save(primaryinfo);
+	}
+	
+	@Override
+	public EmployeeDto entityToDto(EmployeePrimaryInfo primaryinfo) {
+		EmployeeDto dto = modelmapper.map(primaryinfo, EmployeeDto.class);
+		return dto;
+	}
+
+
+	@Override
+	public EmployeePrimaryInfo getById(String empId) {
+
+		return dao.findByEmpId(empId);
+	}
+
+	@Override
+	public EmployeePrimaryInfo updateDetails(EmployeePrimaryInfo primaryinfo) {
+		
+		return dao.save(primaryinfo);
+	}
+
+	@Override
+	public List<EmployeePrimaryInfo> getAllEmployees() {
+
+		return dao.getAllEmployees();
+	}
+
+	@Override
+	public Boolean login(String empId, String empName) {
+	boolean	isLogin = false;
+		EmployeePrimaryInfo byEmpId = dao.findByEmpId(empId);
+		if(byEmpId.getEmpName().equals(empName)) {
+			isLogin = true;
+			return isLogin;
+		}else {
+			return null;
+		}
+	}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+//		Boolean isLogin = false;
+//		EmployeePrimaryInfo info = dao.findByEmpId(empId);
+//		if (info != null) {
+//			if (info.getEmpName().equalsIgnoreCase(empName)) {
+//				isLogin = true;
+//		}
+//		}
+//		return isLogin;
+//	}
+
+
+
+	
+//	@Override
+//	public EmployeeDto entityToDto(EmployeePrimaryInfo primaryinfo) {
+//
+//	 return  modelmapper.map(primaryinfo, EmployeeDto.class);
+//		 
+//	}
+//
+//	@Override
+//	public EmployeePrimaryInfo dtoToEntity(EmployeeDto dto) {
+//		
+//		return modelmapper.map(dto, EmployeePrimaryInfo.class);
+//	}
+//
+//	
+	
+
+	
+	
+	
+}

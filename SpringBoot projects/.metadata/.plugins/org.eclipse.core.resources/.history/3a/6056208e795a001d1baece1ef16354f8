@@ -1,0 +1,8 @@
+package com.te.springboot.entity;
+
+public class Employee {
+	private String empId;
+	private String empName;
+	private String empPwd;
+	private String empEmailId;
+}
